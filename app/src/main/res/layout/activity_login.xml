@@ -55,33 +55,66 @@
                     android:srcCompat="soc"
                     tools:ignore="MissingConstraints" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-            <EditText
-                android:id="@+id/editText_login_pwd"
+
+            <TextView
+                android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/editText_login_email"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/border"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:minHeight="48dp"
-                android:padding="6dp" />
+                android:layout_marginStart="32dp"
+                android:text="Enter Email"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editText_login_email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView_main_head"
+                android:layout_height="50dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
+                android:textSize="16sp"
+                android:textColor="#a2a4b5"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/border"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_green"
+                android:textColorHint="#a2a4b5"
+                android:hint="Enter your Email"
                 android:minHeight="48dp"
                 android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="Enter Password"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:textColor="#a2a4b5"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edittext_green"
+                android:textColorHint="#a2a4b5"
+                android:hint="Enter your Password"
+                android:minHeight="48dp"
+                android:padding="6dp" />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/button_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="Login"/>
+
 
         </LinearLayout>
     </ScrollView>
